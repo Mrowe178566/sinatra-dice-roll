@@ -41,7 +41,7 @@ get("/dice/2/6") do
     @rolls.push(die)    # Add the random number to the array 
   end
 
-  erb(:two_six)
+  erb(:two_six,{ :layout => :wrapper })
 end
 
 
@@ -54,7 +54,7 @@ get("/dice/2/10") do
     @rolls.push(die)    # Add the random number to the array 
   end
 
-  erb(:two_ten)
+  erb(:two_ten,{ :layout => :wrapper })
 end
 
 
@@ -67,7 +67,7 @@ get("/dice/1/20") do
     @rolls.push(die)    # Add the random number to the array 
   end
 
-  erb(:one_twenty)
+  erb(:one_twenty,{ :layout => :wrapper })
 end
 
 
@@ -80,7 +80,7 @@ get("/dice/5/4") do
     @rolls.push(die)    # Add the random number to the array 
   end
   
-  erb(:five_four)
+  erb(:five_four,{ :layout => :wrapper })
 end
 
 
@@ -93,5 +93,5 @@ get("/dice/100/6") do
     @rolls.push(die)    # Add the random number to the array 
   end
 
-  erb(:one_hundred_six)
+  erb(:one_hundred_six, { :layout => :wrapper })
 end
